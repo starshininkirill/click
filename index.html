@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+
+<body>
+   
+   <div class="contaimer">
+      <div class="wrap">
+         <div class="count">
+            <p id="count">0р</p>
+         </div>
+         <div class="shop">
+            <ul>
+               <li>Магазин</li>
+               <li class="shop__position" id="shop__position-1" onclick="shopBuyOne()">+1 за клик(20р)</li>
+               <li class="shop__position" id="shop__position-2" onclick="shopBuyTwo()">+6 за клик(100р)</li>
+               <li class="shop__position" id="shop__position-3" onclick="shopBuyTree()">+15 за клик(1000р)</li>
+               <li class="shop__position" id="shop__position-4" onclick="shopBuyFour()">+40 за клик(5000р)</li>
+               <li class="shop__position" id="shop__position-5" onclick="shopBuyUnreal()">+1 000 за клик(100 000р)</li>
+               <li class="shop__position" id="shop__position-6" onclick="shopBuySix()">+5 000 за клик(5 000 000р)</li>
+               <li class="shop__position" ><b>Бафы в секунду</b></li>
+               <li class="shop__position" id="positionOne"  onclick="startInterval(this)">+1 в секунду(100р)</li>
+               <li class="shop__position" id="positionTwo"  onclick="startInterval(this)">+6 в секунду (250р)</li>
+               <li class="shop__position" id="positionTree"  onclick="startInterval(this)">+100 в секунду (50 000р)</li>
+               <li class="shop__position" id="positionFour"  onclick="startInterval(this)">+1000 в секунду (500 000р)</li>
+            </ul>
+            <div class="info-second" id="infoPerSecond" >+0 в секунду</div>
+            <div class="current-weight" id="clickinfo">+1 за клик</div>
+            
+         </div>
+         <div class="clicker"><p id="click" onclick="calculate()"></p></div>
+         <div class="secret-shop">
+            <ul>
+               <li class="secret-shop_li" onclick="shopBuyImageOne()" id="imageOne">Микроприкол(1 000р)</li>
+               <li class="secret-shop_li" onclick="shopBuyImageTwo()" id="imageTwo">Приекол побольше(100 000р)</li>
+               <li class="secret-shop_li" onclick="shopBuyImageTree()" id="imageTree">РЕЙД БОСС НАФИК(500 000р)</li>
+               <li class="secret-shop_li" onclick="shopBuyImageFour()" id="imageFour">Секретный прикол(10 000 000р)</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+
+   <script src="js/script.js">
+   </script>
+</body>
+
+</html>
